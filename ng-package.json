@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/solcre-auth-library",
+  "dest": "../../dist/ng-solcre-auth",
   "lib": {
     "entryFile": "src/public-api.ts"
   }
