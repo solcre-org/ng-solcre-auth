@@ -2,9 +2,9 @@ import { NgModule } from "@angular/core";
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { AuthService } from './auth.service';
+import { AuthService } from './solcre-auth-library.service';
 import { AuthGuard } from './auth-guard-service';
-import { SolcreAuthLibraryComponent } from './ng-solcre-auth.component';
+import { SolcreAuthLibraryComponent } from './auth.component';
 import { CommonModule } from '@angular/common';
 import { LocalStorageModule } from 'angular-2-local-storage';
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Validators, FormGroup, FormBuilder } from '@angular/forms';
-import { AuthService } from './auth.service';
+import { AuthService } from './solcre-auth-library.service';
 @Component({
   selector: 'lib-auth-library',
   templateUrl: './login.component.html',

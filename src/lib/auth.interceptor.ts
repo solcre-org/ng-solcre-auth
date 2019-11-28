@@ -9,7 +9,7 @@ import {
 import { Observable, BehaviorSubject, throwError } from 'rxjs';
 import { catchError, filter, take, switchMap, finalize } from 'rxjs/operators';
 ​
-import { AuthService } from './auth.service';
+import { AuthService } from './solcre-auth-library.service';
 // ​import { AccessTokenModel } from './access-token.model';
 
 @Injectable()
