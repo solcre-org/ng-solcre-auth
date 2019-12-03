@@ -9,7 +9,7 @@ import { environment } from './environment';
 @Injectable({ //duda
   providedIn: 'root'
 })
-export class AuthService {
+export class SolcreAuthService {
 
     codeDomain: string;
     public searchingCode: EventEmitter<boolean> = new EventEmitter();

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Validators, FormGroup, FormBuilder } from '@angular/forms';
-import { AuthService } from './solcre-auth-library.service';
+import { SolcreAuthService } from './solcre-auth.service';
 @Component({
   selector: 'lib-auth-library',
   templateUrl: './login.component.html',
@@ -14,7 +14,7 @@ export class SolcreAuthLibraryComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    private authService: AuthService,
+    private authService: SolcreAuthService,
   ) { }
 
   ngOnInit() {

@@ -9,7 +9,7 @@ import {
 import { Observable, BehaviorSubject, throwError } from 'rxjs';
 import { catchError, filter, take, switchMap, finalize } from 'rxjs/operators';
 ​
-import { AuthService } from './solcre-auth-library.service';
+import { SolcreAuthService } from './solcre-auth.service';
 // ​import { AccessTokenModel } from './access-token.model';
 
 @Injectable()
@@ -18,7 +18,7 @@ export class AuthInterceptor implements HttpInterceptor {
     tokenSubject: BehaviorSubject<string> = new BehaviorSubject<string>(null);
 ​
     constructor(
-        private authService: AuthService) { }
+        private authService: SolcreAuthService) { }
 ​
     
     //Intercep method
