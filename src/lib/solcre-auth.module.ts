@@ -5,6 +5,7 @@ import { SolcreAuthService } from './solcre-auth.service';
 import { SolcreAuthLibraryComponent } from './auth.component';
 import { CommonModule } from '@angular/common';
 import { LocalStorageModule } from 'angular-2-local-storage';
+import { AuthInterceptor } from './auth.interceptor';
 
 @NgModule({
     declarations: [
@@ -16,11 +17,20 @@ import { LocalStorageModule } from 'angular-2-local-storage';
         FormsModule,
         HttpClientModule,
         ReactiveFormsModule,
+        LocalStorageModule.forRoot({
+            prefix: 'columnis-manager',
+            storageType: 'localStorage'
+        }),
     ],
     exports: [
         SolcreAuthLibraryComponent
     ],
     providers: [
+        {
+            provide: HTTP_INTERCEPTORS,
+            useClass: AuthInterceptor,
+            multi: true
+        },
         SolcreAuthService,
     ]
 })

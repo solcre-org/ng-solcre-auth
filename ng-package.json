@@ -3,5 +3,10 @@
   "dest": "../../dist/ng-solcre-auth",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "whitelistedNonPeerDependencies": [
+    "angular-2-local-storage",
+    "@ngx-translate/http-loader",
+    "@ngx-translate/core"
+  ] 
 }

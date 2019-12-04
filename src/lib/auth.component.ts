@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Validators, FormGroup, FormBuilder } from '@angular/forms';
 import { SolcreAuthService } from './solcre-auth.service';
 @Component({
-  selector: 'lib-auth-library',
+  selector: 'solcre-auth-component',
   templateUrl: './login.component.html',
   styles: [] //syles broken the library
 })
