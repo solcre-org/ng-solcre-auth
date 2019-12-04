@@ -10,7 +10,7 @@ Import the module:
  `import { SolcreAuthModule } from 'ng-solcre-auth'`.
 
 ## Use
-`<solcre-auth-component></lib-auth-component>`
+`<solcre-auth-component></solcre-auth-component>`
 
 ## Clone repo
 Clone into ./projects
